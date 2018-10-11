@@ -17,7 +17,7 @@ using System;
         Console.WriteLine("d = {0}", d);
 
         float e = 3.2e+3f;
-        Console.WriteLine("{0:E}", d);
+        Console.WriteLine("{0:E}", e);
 
             Console.ReadKey();
         }
