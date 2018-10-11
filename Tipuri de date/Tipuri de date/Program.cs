@@ -1,17 +1,68 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+/* Orice tip de date este un obiect(deci au proprietati si
+ * functii) 
+ * Tipurile coincid cu cele din C++
+ * 
+ * 
+ * */
 
-namespace Tipuri_de_date
-{
+
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        // int - numere intregi
+        int a = 3;
+
+        //float - numere reale, constantele de tip float
+        // au  dupa ele litera 'f', care  le identifica.
+        float b = 3.5f;
+
+        //double - numere reale, doar cu precizie mai buna oarecum
+        //au dupa ele litera 'd', care le identifica.
+        double s = 3.5d;
+
+        //decimal -  acestea pot fi considerate  numere intregi
+        //sau reale, dupa nevoie, au o precizie mult mai buna
+        // si sunt folosite pentru calcule scurte, dar pentru care
+        // trebuie sa avem un rezultat exact.
+        decimal d = 3;
+
+        //uint-intreg pozitiv
+        uint x = 3;
+
+        //long - intreg foarte mare 
+        long e = 4546657;
+
+        //ulong - intreg pozitiv foarte mare;
+
+        ulong q = 4534534534545;
+
+
+        //char - caractere, care incep si se terminca cu 's'.
+
+        char c = 's';
+
+
+         // bool - valori logice, adevarat( true sau false)
+        bool f = true;
+        //Fiecare tip de date are o proprietate care memoreaza
+        // valoarea minima(si una care o are pe cea maxima)
+        Console.WriteLine("int : "+int.MinValue + " " + int.MaxValue);
+        Console.WriteLine("uint : " + uint.MinValue + " " + uint.MaxValue);
+
+        Console.WriteLine("long:" + long.MinValue + " " + long.MaxValue);
+        Console.WriteLine("ulong:" + ulong.MinValue + " " + ulong.MaxValue);
+
+        Console.WriteLine("float:" + float.MinValue + " " + long.MaxValue);
+        Console.WriteLine("double:" + double.MinValue + "  " + double.MaxValue);
+
+
+
+        
+        
+           
             Console.ReadKey();
         }
     }
-}
+
