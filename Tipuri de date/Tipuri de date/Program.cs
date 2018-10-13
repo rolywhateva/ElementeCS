@@ -20,13 +20,14 @@ using System;
 
         //double - numere reale, doar cu precizie mai buna oarecum
         //au dupa ele litera 'd', care le identifica.
-        double s = 3.5d;
+        //valorile reale sunt double intr-un mod implicit.
+        double s = 3.5;
 
         //decimal -  acestea pot fi considerate  numere intregi
         //sau reale, dupa nevoie, au o precizie mult mai buna
         // si sunt folosite pentru calcule scurte, dar pentru care
         // trebuie sa avem un rezultat exact.
-        decimal d = 3;
+        decimal d =3;
 
         //uint-intreg pozitiv
         uint x = 3;
@@ -56,13 +57,18 @@ using System;
 
         Console.WriteLine("float:" + float.MinValue + " " + long.MaxValue);
         Console.WriteLine("double:" + double.MinValue + "  " + double.MaxValue);
+        //Pana si constantele!
+
+        Console.WriteLine("12.GetHashCode() = {0}", 12.GetHashCode());
+        Console.WriteLine("12.Equals(23) = {0}", 12.Equals(23));
+        Console.WriteLine("12.ToString() = {0}", 12.ToString());
+        Console.WriteLine("12.GetType() = {0}", 12.GetType());
 
 
 
-        
-        
-           
-            Console.ReadKey();
+
+
+        Console.ReadKey();
         }
     }
 
